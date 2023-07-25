@@ -1,2 +1,2 @@
 # sinhvienufba.github.io
-Dev Wev
+Dev Web
