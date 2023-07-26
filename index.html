@@ -48,6 +48,12 @@
 .TieuDe {
   text-align: center;
   font-size: 15px;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    background-clip: text; 
+  color: transparent;
+
 }
 
 /*Hiệu ứng web*/
@@ -142,21 +148,7 @@
 <!--Scripts-->
 <script>
 
-//Random Màu Tiêu Đề
 
-  function getRandomColor() {
-    const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
-    return colors[Math.floor(Math.random() * colors.length)];
-  }
-
-  function applyRandomColor() {
-    const titleDiv = document.getElementById('myTitle');
-    const randomColor = getRandomColor();
-    titleDiv.style.color = randomColor;
-  }
-  applyRandomColor();
-  setInterval(applyRandomColor, 1000);
-  //Random Màu Tiêu Đề //End
  
 
 </script>
