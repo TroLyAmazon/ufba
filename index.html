@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFBA</title>
-
-
+<div class="TieuDe">
+<div class="TieuDe" id="myTitle">
+  <h1>Giải pháp an toàn thông tin trên mạng xã hội và trên các sàn thương mại điện tử cho sinh viên.</h1>
+  <h1>Chiến lược và biện pháp bảo mật thông tin</h1>
+</div>
 
 
 
@@ -40,34 +43,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--CSS-->
 <style>
-
+.TieuDe {
+  text-align: center;
+  font-size: 15px;
+}
 
 /*Hiệu ứng web*/
 @-webkit-keyframes snowflakes-fall {
@@ -158,36 +139,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Scripts-->
 <script>
 
+//Random Màu Tiêu Đề
+
+  function getRandomColor() {
+    const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  function applyRandomColor() {
+    const titleDiv = document.getElementById('myTitle');
+    const randomColor = getRandomColor();
+    titleDiv.style.color = randomColor;
+  }
+  applyRandomColor();
+  setInterval(applyRandomColor, 1000);
+  //Random Màu Tiêu Đề //End
+ 
+
 </script>
+
 <!--Scripts_End-->
