@@ -1,5 +1,5 @@
 
-#MyTitle {
+#TieuDe {
   text-align: center;
   font-size: 20px;
   background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
@@ -13,7 +13,9 @@
 font-size: 15px;
 }
 
-
+#BarTimKiem {
+  text-align: center;
+}
 
 /*Hiệu ứng web*/
 @-webkit-keyframes snowflakes-fall {
@@ -94,21 +96,5 @@ font-size: 15px;
   }
 
 
-
-  /*Tìm Kiếm Nhanh*/
-* {
-  margin:30;
-  padding: 30;
-  box-sizing: border-box; 
-}
-
-body {
-  background: #ffffff;
-}
-
-input[type=text] {
-  border: 2px solid green;
-  border-radius: 4px;
-}
 
 
