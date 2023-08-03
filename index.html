@@ -1,12 +1,10 @@
-<!--HTML-->
 <!-- Đường dẫn đến tệp CSS và JavaScript trong cùng thư mục với index.html -->
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 <!-- Đường dẫn đến tệp CSS và JavaScript trong thư mục con 'assets' -->
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/script.js"></script>
-
-
+<!--HTML-->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -16,20 +14,62 @@
 <div id="MyTitle">
   <h1>Giải pháp an toàn thông tin trên mạng xã hội và trên các sàn thương mại điện tử cho sinh viên.</h1>
   <h1>Chiến lược và biện pháp bảo mật thông tin</h1>
-<!--Tìm Kiếm Nhanh-->
-  <button onclick="launchSearch()">Bấm Vào Đây Để Tìm Kiếm Nhanh</button>
+<!--Tìm Kiếm Nhanh-->  
+ <html>
+<head>
+<script language="JavaScript">
+<!--
+var TRange=null;
+function FindString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.Find) {
 
-<div id="searchBar___container" class="centered">
-  <div class="searchBar___inputContainer centered">
-    <input class="searchBar___input" name="query" type="text" />
-    <span class="searchBar___counter">0 of 0</span>
-    <div class="searchBar___jump">
-      <span>&and;</span>
-      <span>&or;</span>
-    </div>
-  </div>
-  <span id="closeSearchBar" class="searchBar___close centered">&#x274c</span>
-</div>
+  // MÃ CHO CÁC TRÌNH DUYỆT HỖ TRỢ window.find
+  strFound=self.Find(str);
+  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+   strFound=self.Find(str)
+  }
+  if (!strFound) {
+   strFound=self.Find(str,0,1)
+   while (self.Find(str,0,1)) continue
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // MÃ DÀNH CHO NGƯỜI KHÁM PHÁ
+
+  if (TRange!=null) {
+   TRange.collapse(false)
+   strFound=TRange.FindText(str)
+   if (strFound) TRange.select()
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange()
+   strFound=TRange.FindText(str)
+   if (strFound) TRange.select()
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Trình duyệt của bạn không được hỗ trợ, xin lỗi...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
+//-->
+</script>
+</head>
+<body>
+<form name="f1" action="" 
+    onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+    <input type="text" name=t1 value="" size=20>
+    <input type="submit" name=b1 value="Find">
+    <p>Bấm Vào Đây Để Tìm Kiếm và Đối Chiếu Link Lừa Đảo
+</p>
+</form>
+</body>
+</html>
 </div>
 
   
