@@ -5,3 +5,5 @@ const randomTimeout = Math.floor(Math.random() * 6000) + 1000;
 setTimeout(function() {
     window.location.href = 'trangchu.html';
 }, randomTimeout);
+//Chữ Nhảy
+splitting();
