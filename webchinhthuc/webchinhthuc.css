@@ -1,13 +1,10 @@
-/*==Reset CSS==*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /*==Style cơ bản cho website==*/
 body {
   font-family: sans-serif;
   color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /*==Style cho menu===*/
@@ -33,7 +30,6 @@ body {
   background: #F1F1F1;
   color: #333;
 }
-
 
 #TieuDe {
   text-align: center;
