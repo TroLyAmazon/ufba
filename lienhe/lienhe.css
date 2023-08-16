@@ -17,8 +17,6 @@ body {
   background: #fff;
   list-style-type: none;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
 }
 #menu li {
   color: #f1f1f1;

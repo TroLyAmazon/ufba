@@ -1,0 +1,40 @@
+/*==Reset CSS==*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /*==Style cơ bản cho website==*/
+  body {
+    font-family: sans-serif;
+    color: #333;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  #menu {
+    text-align: center;
+  }
+  
+  /*==Style cho menu===*/
+  #menu ul {
+    background: #fff;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+  #menu a:hover {
+    background: #F1F1F1;
+    color: #333;
+  }
