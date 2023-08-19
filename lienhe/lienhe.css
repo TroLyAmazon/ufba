@@ -36,6 +36,18 @@ body {
   color: #333;
 }
 
+footer {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+a {
+	color: blue;
+}
+
 
 
   /* From the :root element you can easily change the colors of the design, its size and so on. */
