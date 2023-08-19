@@ -58,6 +58,19 @@ font-size: 15px;
 }
 
 
+footer {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+a {
+	color: blue;
+}
+
+
 
 
 
