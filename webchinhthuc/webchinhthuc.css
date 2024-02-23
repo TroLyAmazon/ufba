@@ -59,10 +59,10 @@ font-size: 15px;
 
 
 footer {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont;
+font-family: system-ui, -apple-system, BlinkMacSystemFont;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 height: 100vh;
 }
